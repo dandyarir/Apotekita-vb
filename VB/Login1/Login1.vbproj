@@ -188,12 +188,6 @@
     <None Include="Resources\back.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\POS\POS.vbproj">
-      <Project>{1265CAD9-8F96-429B-99DD-D804B8EE6A82}</Project>
-      <Name>POS</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\ic_add_black_24dp.png" />
   </ItemGroup>
   <ItemGroup>

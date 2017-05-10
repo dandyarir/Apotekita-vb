@@ -85,6 +85,23 @@ Partial Class Penjualan
         Me.Label24 = New System.Windows.Forms.Label
         Me.btnTambahShow = New System.Windows.Forms.Button
         Me.pnDafJual = New System.Windows.Forms.Panel
+        Me.pn_detail_penjualan = New System.Windows.Forms.Panel
+        Me.Button3 = New System.Windows.Forms.Button
+        Me.Label29 = New System.Windows.Forms.Label
+        Me.lb_total_harga_penj = New System.Windows.Forms.Label
+        Me.Label27 = New System.Windows.Forms.Label
+        Me.lb_jml_item_penj = New System.Windows.Forms.Label
+        Me.Label25 = New System.Windows.Forms.Label
+        Me.lb_pegawai = New System.Windows.Forms.Label
+        Me.Label19 = New System.Windows.Forms.Label
+        Me.lb_waktu = New System.Windows.Forms.Label
+        Me.lb_nofak = New System.Windows.Forms.Label
+        Me.btn_kembali_penj = New System.Windows.Forms.Button
+        Me.DataGridView_detail = New System.Windows.Forms.DataGridView
+        Me.Label18 = New System.Windows.Forms.Label
+        Me.Label17 = New System.Windows.Forms.Label
+        Me.Label16 = New System.Windows.Forms.Label
+        Me.Label20 = New System.Windows.Forms.Label
         Me.Button2 = New System.Windows.Forms.Button
         Me.btnBef = New System.Windows.Forms.Button
         Me.btnNext = New System.Windows.Forms.Button
@@ -116,23 +133,6 @@ Partial Class Penjualan
         Me.btnDaftarJual = New System.Windows.Forms.Button
         Me.btnPenjualan = New System.Windows.Forms.Button
         Me.Button8 = New System.Windows.Forms.Button
-        Me.Label20 = New System.Windows.Forms.Label
-        Me.Label16 = New System.Windows.Forms.Label
-        Me.Label17 = New System.Windows.Forms.Label
-        Me.Label18 = New System.Windows.Forms.Label
-        Me.DataGridView_detail = New System.Windows.Forms.DataGridView
-        Me.btn_kembali_penj = New System.Windows.Forms.Button
-        Me.lb_nofak = New System.Windows.Forms.Label
-        Me.lb_waktu = New System.Windows.Forms.Label
-        Me.Label19 = New System.Windows.Forms.Label
-        Me.lb_pegawai = New System.Windows.Forms.Label
-        Me.Label25 = New System.Windows.Forms.Label
-        Me.lb_jml_item_penj = New System.Windows.Forms.Label
-        Me.Label27 = New System.Windows.Forms.Label
-        Me.lb_total_harga_penj = New System.Windows.Forms.Label
-        Me.Label29 = New System.Windows.Forms.Label
-        Me.Button3 = New System.Windows.Forms.Button
-        Me.pn_detail_penjualan = New System.Windows.Forms.Panel
         Me.PnPenjualan.SuspendLayout()
         Me.gbTambah.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -146,11 +146,11 @@ Partial Class Penjualan
         Me.Panel7.SuspendLayout()
         CType(Me.DataGridView_obatEd, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnDafJual.SuspendLayout()
+        Me.pn_detail_penjualan.SuspendLayout()
+        CType(Me.DataGridView_detail, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView_Penjualan, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
-        CType(Me.DataGridView_detail, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pn_detail_penjualan.SuspendLayout()
         Me.SuspendLayout()
         '
         'PnPenjualan
@@ -849,6 +849,199 @@ Partial Class Penjualan
         Me.pnDafJual.TabIndex = 12
         Me.pnDafJual.Visible = False
         '
+        'pn_detail_penjualan
+        '
+        Me.pn_detail_penjualan.Controls.Add(Me.Button3)
+        Me.pn_detail_penjualan.Controls.Add(Me.Label29)
+        Me.pn_detail_penjualan.Controls.Add(Me.lb_total_harga_penj)
+        Me.pn_detail_penjualan.Controls.Add(Me.Label27)
+        Me.pn_detail_penjualan.Controls.Add(Me.lb_jml_item_penj)
+        Me.pn_detail_penjualan.Controls.Add(Me.Label25)
+        Me.pn_detail_penjualan.Controls.Add(Me.lb_pegawai)
+        Me.pn_detail_penjualan.Controls.Add(Me.Label19)
+        Me.pn_detail_penjualan.Controls.Add(Me.lb_waktu)
+        Me.pn_detail_penjualan.Controls.Add(Me.lb_nofak)
+        Me.pn_detail_penjualan.Controls.Add(Me.btn_kembali_penj)
+        Me.pn_detail_penjualan.Controls.Add(Me.DataGridView_detail)
+        Me.pn_detail_penjualan.Controls.Add(Me.Label18)
+        Me.pn_detail_penjualan.Controls.Add(Me.Label17)
+        Me.pn_detail_penjualan.Controls.Add(Me.Label16)
+        Me.pn_detail_penjualan.Controls.Add(Me.Label20)
+        Me.pn_detail_penjualan.Location = New System.Drawing.Point(3, 0)
+        Me.pn_detail_penjualan.Name = "pn_detail_penjualan"
+        Me.pn_detail_penjualan.Size = New System.Drawing.Size(1072, 587)
+        Me.pn_detail_penjualan.TabIndex = 26
+        Me.pn_detail_penjualan.Visible = False
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Image = Global.Login.My.Resources.Resources.ic_print_black_36dp
+        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button3.Location = New System.Drawing.Point(851, 16)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(200, 60)
+        Me.Button3.TabIndex = 35
+        Me.Button3.Text = "Cetak ulang struk"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.Location = New System.Drawing.Point(29, 135)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(195, 22)
+        Me.Label29.TabIndex = 33
+        Me.Label29.Text = "Detail daftar penjualan "
+        '
+        'lb_total_harga_penj
+        '
+        Me.lb_total_harga_penj.AutoSize = True
+        Me.lb_total_harga_penj.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_total_harga_penj.Location = New System.Drawing.Point(925, 118)
+        Me.lb_total_harga_penj.Name = "lb_total_harga_penj"
+        Me.lb_total_harga_penj.Size = New System.Drawing.Size(40, 22)
+        Me.lb_total_harga_penj.TabIndex = 32
+        Me.lb_total_harga_penj.Text = "000"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.Location = New System.Drawing.Point(795, 118)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(120, 22)
+        Me.Label27.TabIndex = 31
+        Me.Label27.Text = "Total Harga : "
+        '
+        'lb_jml_item_penj
+        '
+        Me.lb_jml_item_penj.AutoSize = True
+        Me.lb_jml_item_penj.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_jml_item_penj.Location = New System.Drawing.Point(727, 118)
+        Me.lb_jml_item_penj.Name = "lb_jml_item_penj"
+        Me.lb_jml_item_penj.Size = New System.Drawing.Size(40, 22)
+        Me.lb_jml_item_penj.TabIndex = 30
+        Me.lb_jml_item_penj.Text = "000"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(598, 118)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(120, 22)
+        Me.Label25.TabIndex = 29
+        Me.Label25.Text = "Jumlah Item : "
+        '
+        'lb_pegawai
+        '
+        Me.lb_pegawai.AutoSize = True
+        Me.lb_pegawai.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_pegawai.Location = New System.Drawing.Point(727, 87)
+        Me.lb_pegawai.Name = "lb_pegawai"
+        Me.lb_pegawai.Size = New System.Drawing.Size(40, 22)
+        Me.lb_pegawai.TabIndex = 28
+        Me.lb_pegawai.Text = "000"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(598, 87)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(123, 22)
+        Me.Label19.TabIndex = 27
+        Me.Label19.Text = "Dilayani oleh :"
+        '
+        'lb_waktu
+        '
+        Me.lb_waktu.AutoSize = True
+        Me.lb_waktu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_waktu.Location = New System.Drawing.Point(410, 118)
+        Me.lb_waktu.Name = "lb_waktu"
+        Me.lb_waktu.Size = New System.Drawing.Size(177, 22)
+        Me.lb_waktu.TabIndex = 26
+        Me.lb_waktu.Text = "2017-03-09 10:07:24"
+        '
+        'lb_nofak
+        '
+        Me.lb_nofak.AutoSize = True
+        Me.lb_nofak.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_nofak.Location = New System.Drawing.Point(377, 88)
+        Me.lb_nofak.Name = "lb_nofak"
+        Me.lb_nofak.Size = New System.Drawing.Size(40, 22)
+        Me.lb_nofak.TabIndex = 25
+        Me.lb_nofak.Text = "000"
+        '
+        'btn_kembali_penj
+        '
+        Me.btn_kembali_penj.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_kembali_penj.Image = Global.Login.My.Resources.Resources.ic_undo_black_48dp
+        Me.btn_kembali_penj.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btn_kembali_penj.Location = New System.Drawing.Point(27, 15)
+        Me.btn_kembali_penj.Name = "btn_kembali_penj"
+        Me.btn_kembali_penj.Padding = New System.Windows.Forms.Padding(4, 0, 4, 8)
+        Me.btn_kembali_penj.Size = New System.Drawing.Size(200, 96)
+        Me.btn_kembali_penj.TabIndex = 24
+        Me.btn_kembali_penj.Text = "Kembali ke daftar penjualan"
+        Me.btn_kembali_penj.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btn_kembali_penj.UseVisualStyleBackColor = True
+        '
+        'DataGridView_detail
+        '
+        Me.DataGridView_detail.BackgroundColor = System.Drawing.SystemColors.ButtonFace
+        Me.DataGridView_detail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView_detail.Location = New System.Drawing.Point(28, 160)
+        Me.DataGridView_detail.Name = "DataGridView_detail"
+        Me.DataGridView_detail.ReadOnly = True
+        Me.DataGridView_detail.Size = New System.Drawing.Size(1023, 410)
+        Me.DataGridView_detail.TabIndex = 9
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(243, 118)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(174, 22)
+        Me.Label18.TabIndex = 8
+        Me.Label18.Text = "Waktu pemesanan : "
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(243, 87)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(129, 22)
+        Me.Label17.TabIndex = 7
+        Me.Label17.Text = "Nomor Faktur :"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.Snow
+        Me.Label16.Location = New System.Drawing.Point(433, 10)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(361, 37)
+        Me.Label16.TabIndex = 6
+        Me.Label16.Text = "Detail Penjualan Apotekita"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.DarkSlateBlue
+        Me.Label20.Location = New System.Drawing.Point(485, 48)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(271, 25)
+        Me.Label20.TabIndex = 34
+        Me.Label20.Text = "Melihat detail nota penjualan"
+        '
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1174,199 +1367,6 @@ Partial Class Penjualan
         Me.Button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button8.UseVisualStyleBackColor = True
         '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.ForeColor = System.Drawing.Color.DarkSlateBlue
-        Me.Label20.Location = New System.Drawing.Point(485, 48)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(271, 25)
-        Me.Label20.TabIndex = 34
-        Me.Label20.Text = "Melihat detail nota penjualan"
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.Color.Snow
-        Me.Label16.Location = New System.Drawing.Point(433, 10)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(361, 37)
-        Me.Label16.TabIndex = 6
-        Me.Label16.Text = "Detail Penjualan Apotekita"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(243, 87)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(129, 22)
-        Me.Label17.TabIndex = 7
-        Me.Label17.Text = "Nomor Faktur :"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(243, 118)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(174, 22)
-        Me.Label18.TabIndex = 8
-        Me.Label18.Text = "Waktu pemesanan : "
-        '
-        'DataGridView_detail
-        '
-        Me.DataGridView_detail.BackgroundColor = System.Drawing.SystemColors.ButtonFace
-        Me.DataGridView_detail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView_detail.Location = New System.Drawing.Point(28, 160)
-        Me.DataGridView_detail.Name = "DataGridView_detail"
-        Me.DataGridView_detail.ReadOnly = True
-        Me.DataGridView_detail.Size = New System.Drawing.Size(1023, 410)
-        Me.DataGridView_detail.TabIndex = 9
-        '
-        'btn_kembali_penj
-        '
-        Me.btn_kembali_penj.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_kembali_penj.Image = Global.Login.My.Resources.Resources.ic_undo_black_48dp
-        Me.btn_kembali_penj.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btn_kembali_penj.Location = New System.Drawing.Point(27, 15)
-        Me.btn_kembali_penj.Name = "btn_kembali_penj"
-        Me.btn_kembali_penj.Padding = New System.Windows.Forms.Padding(4, 0, 4, 8)
-        Me.btn_kembali_penj.Size = New System.Drawing.Size(200, 96)
-        Me.btn_kembali_penj.TabIndex = 24
-        Me.btn_kembali_penj.Text = "Kembali ke daftar penjualan"
-        Me.btn_kembali_penj.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btn_kembali_penj.UseVisualStyleBackColor = True
-        '
-        'lb_nofak
-        '
-        Me.lb_nofak.AutoSize = True
-        Me.lb_nofak.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_nofak.Location = New System.Drawing.Point(377, 88)
-        Me.lb_nofak.Name = "lb_nofak"
-        Me.lb_nofak.Size = New System.Drawing.Size(40, 22)
-        Me.lb_nofak.TabIndex = 25
-        Me.lb_nofak.Text = "000"
-        '
-        'lb_waktu
-        '
-        Me.lb_waktu.AutoSize = True
-        Me.lb_waktu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_waktu.Location = New System.Drawing.Point(410, 118)
-        Me.lb_waktu.Name = "lb_waktu"
-        Me.lb_waktu.Size = New System.Drawing.Size(177, 22)
-        Me.lb_waktu.TabIndex = 26
-        Me.lb_waktu.Text = "2017-03-09 10:07:24"
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(598, 87)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(123, 22)
-        Me.Label19.TabIndex = 27
-        Me.Label19.Text = "Dilayani oleh :"
-        '
-        'lb_pegawai
-        '
-        Me.lb_pegawai.AutoSize = True
-        Me.lb_pegawai.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_pegawai.Location = New System.Drawing.Point(727, 87)
-        Me.lb_pegawai.Name = "lb_pegawai"
-        Me.lb_pegawai.Size = New System.Drawing.Size(40, 22)
-        Me.lb_pegawai.TabIndex = 28
-        Me.lb_pegawai.Text = "000"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(598, 118)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(120, 22)
-        Me.Label25.TabIndex = 29
-        Me.Label25.Text = "Jumlah Item : "
-        '
-        'lb_jml_item_penj
-        '
-        Me.lb_jml_item_penj.AutoSize = True
-        Me.lb_jml_item_penj.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_jml_item_penj.Location = New System.Drawing.Point(727, 118)
-        Me.lb_jml_item_penj.Name = "lb_jml_item_penj"
-        Me.lb_jml_item_penj.Size = New System.Drawing.Size(40, 22)
-        Me.lb_jml_item_penj.TabIndex = 30
-        Me.lb_jml_item_penj.Text = "000"
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = True
-        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.Location = New System.Drawing.Point(795, 118)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(120, 22)
-        Me.Label27.TabIndex = 31
-        Me.Label27.Text = "Total Harga : "
-        '
-        'lb_total_harga_penj
-        '
-        Me.lb_total_harga_penj.AutoSize = True
-        Me.lb_total_harga_penj.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_total_harga_penj.Location = New System.Drawing.Point(925, 118)
-        Me.lb_total_harga_penj.Name = "lb_total_harga_penj"
-        Me.lb_total_harga_penj.Size = New System.Drawing.Size(40, 22)
-        Me.lb_total_harga_penj.TabIndex = 32
-        Me.lb_total_harga_penj.Text = "000"
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.Location = New System.Drawing.Point(29, 135)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(195, 22)
-        Me.Label29.TabIndex = 33
-        Me.Label29.Text = "Detail daftar penjualan "
-        '
-        'Button3
-        '
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Image = Global.Login.My.Resources.Resources.ic_print_black_36dp
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button3.Location = New System.Drawing.Point(851, 16)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(200, 60)
-        Me.Button3.TabIndex = 35
-        Me.Button3.Text = "Cetak ulang struk"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'pn_detail_penjualan
-        '
-        Me.pn_detail_penjualan.Controls.Add(Me.Button3)
-        Me.pn_detail_penjualan.Controls.Add(Me.Label29)
-        Me.pn_detail_penjualan.Controls.Add(Me.lb_total_harga_penj)
-        Me.pn_detail_penjualan.Controls.Add(Me.Label27)
-        Me.pn_detail_penjualan.Controls.Add(Me.lb_jml_item_penj)
-        Me.pn_detail_penjualan.Controls.Add(Me.Label25)
-        Me.pn_detail_penjualan.Controls.Add(Me.lb_pegawai)
-        Me.pn_detail_penjualan.Controls.Add(Me.Label19)
-        Me.pn_detail_penjualan.Controls.Add(Me.lb_waktu)
-        Me.pn_detail_penjualan.Controls.Add(Me.lb_nofak)
-        Me.pn_detail_penjualan.Controls.Add(Me.btn_kembali_penj)
-        Me.pn_detail_penjualan.Controls.Add(Me.DataGridView_detail)
-        Me.pn_detail_penjualan.Controls.Add(Me.Label18)
-        Me.pn_detail_penjualan.Controls.Add(Me.Label17)
-        Me.pn_detail_penjualan.Controls.Add(Me.Label16)
-        Me.pn_detail_penjualan.Controls.Add(Me.Label20)
-        Me.pn_detail_penjualan.Location = New System.Drawing.Point(3, 0)
-        Me.pn_detail_penjualan.Name = "pn_detail_penjualan"
-        Me.pn_detail_penjualan.Size = New System.Drawing.Size(1072, 587)
-        Me.pn_detail_penjualan.TabIndex = 26
-        Me.pn_detail_penjualan.Visible = False
-        '
         'Penjualan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -1405,14 +1405,14 @@ Partial Class Penjualan
         CType(Me.DataGridView_obatEd, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnDafJual.ResumeLayout(False)
         Me.pnDafJual.PerformLayout()
+        Me.pn_detail_penjualan.ResumeLayout(False)
+        Me.pn_detail_penjualan.PerformLayout()
+        CType(Me.DataGridView_detail, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView_Penjualan, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
-        CType(Me.DataGridView_detail, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pn_detail_penjualan.ResumeLayout(False)
-        Me.pn_detail_penjualan.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
