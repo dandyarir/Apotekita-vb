@@ -841,6 +841,13 @@ Public Class Penjualan
             Next
         End If
 
+        If DataGridView_pesan.RowCount > 1 Then
+            'hapussemua
+            For Each row As DataGridViewRow In DataGridView_pesan.Rows
+                DataGridView_pesan.Rows.Remove(row)
+            Next
+        End If
+
         
 
     End Sub
