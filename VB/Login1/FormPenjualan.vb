@@ -770,12 +770,22 @@ Public Class Penjualan
         End If
         con.Close()
 
+        'menambah ke penjualan
         con.Open()
         Dim sql As String = "INSERT INTO penjualan values ('" & lbNoFaktur.Text & "', '" & idne & "',(NOW()), '" & totalharga & "')"
         Dim cmd As New MySqlCommand(sql, con)
-
         cmd.ExecuteNonQuery()
         con.Close()
+
+        'menambah ke detail penjualan
+        For Each row As DataGridViewRow In DataGridView_pesan.Rows
+
+            con.Open()
+            Dim sql_detail As String = "INSERT INTO detail_penjualan(`id_penjualan`, `id_obat`, `jml_out`, `jumlah_harga_item`) values ('" & lbNoFaktur.Text & "', '" & row.Cells.Item(1).Value & "', '" & row.Cells.Item(6).Value & "', '" & row.Cells.Item(7).Value & "')"
+            Dim cmd_detail As New MySqlCommand(sql_detail, con)
+            cmd_detail.ExecuteNonQuery()
+            con.Close()
+        Next
 
         refreshPemesanan()
         segarkan()

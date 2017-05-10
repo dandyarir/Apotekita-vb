@@ -456,6 +456,7 @@ Partial Class Penjualan
         Me.DataGridView_pesan.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.DataGridView_pesan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView_pesan.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.nomor, Me.id_obat, Me.nama_obat, Me.expired_date, Me.no_barcode, Me.harga, Me.jumlah, Me.total_harga_obat})
+        Me.DataGridView_pesan.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DataGridView_pesan.Location = New System.Drawing.Point(0, 99)
         Me.DataGridView_pesan.Name = "DataGridView_pesan"
         Me.DataGridView_pesan.ShowCellErrors = False
