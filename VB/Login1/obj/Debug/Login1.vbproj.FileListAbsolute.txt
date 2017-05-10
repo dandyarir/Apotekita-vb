@@ -57,3 +57,21 @@ C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\bin\D
 C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\bin\Debug\POS.xml
 C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\Login.dialogspn.resources
 C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\Login.Penjualan.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.dialoghps.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.dialogspn.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.form1.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.Penjualan.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.Login.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.MainHRD.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.menu_utama.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.Resources.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.Tambah.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.Ubah.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login1.vbproj.GenerateResource.Cache
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\bin\Debug\Apotekita.exe
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\bin\Debug\Apotekita.pdb
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\bin\Debug\Apotekita.xml
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Apotekita.exe
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Apotekita.xml
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Apotekita.pdb

@@ -20,6 +20,8 @@ Public Class Penjualan
     Public isKurang As Boolean = False
     Public isHapus As Boolean = False
 
+    Public totalharga As Integer = 0
+
 
     Private Sub tbJumlah_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles tbJumlah.KeyPress
         If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) Then
@@ -119,24 +121,18 @@ Public Class Penjualan
         lbHargaSatuan.Text = "0,00"
         btnUbah.Visible = True
 
-        'Mengupdate text jika ditambahkan
-        If DataGridView_pesan.RowCount > 1 And isTambahFormTambah = True And isSegar = False And isKurang = False Then
-            MessageBox.Show("baru")
-            'jml_brg = jml_brg + tbJumlah.Text
-            'lbTotalBrg.Text = jml_brg
-        ElseIf isSegar = False And isKurang = True Then
-            MessageBox.Show("Berkurang")
-            jml_brg = jml_brg - (temp_ubah_jumlah - tbJumlahEd.Text)
-            lbTotalBrg.Text = jml_brg
-        ElseIf isSegar = False And isKurang = False And isHapus = False Then
-            MessageBox.Show("bertambah")
-            jml_brg = jml_brg + (tbJumlahEd.Text - temp_ubah_jumlah)
-            lbTotalBrg.Text = jml_brg
-        ElseIf isSegar = False And isHapus = True Then
-            MessageBox.Show("hapus")
-            jml_brg = jml_brg - temp_ubah_jumlah
-            lbTotalBrg.Text = jml_brg
+        'menghitung jumlah pesanan
+        jml_brg = 0
+        Dim cek_isi_dg As Integer = DataGridView_pesan.RowCount.ToString
+        If cek_isi_dg >= 1 Then
+            For Each row As DataGridViewRow In DataGridView_pesan.Rows
+                jml_brg += row.Cells.Item(6).Value
+                lbTotalBrg.Text = jml_brg
+            Next
         End If
+
+        'menhitung total harga pesanan
+        jumlahTotalHarga()
 
         'kembali ke default
         harga_satuan = 0
@@ -172,20 +168,6 @@ Public Class Penjualan
 
 
     End Sub
-
-
-    'Private Sub DataGridView_obat_edit_CellClick(ByVal sender As System.Object, _
-    '                                       ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView_pesan.CellClick
-    '
-    'Dim Input As [String] = DataGridView_obat.Rows( _
-    'DataGridView_obat.CurrentRow.Index).Cells("harga").Value
-    'Dim Temp As Integer = Integer.Parse(Input)
-    'Dim Output As [String] = Temp.ToString("#,#.00")
-
-    '      lbHargaItem.Text = Output
-
-
-    ' End Sub
 
     Private Sub DataGridView_obat_CellClick(ByVal sender As System.Object, _
                                             ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) _
@@ -244,8 +226,6 @@ Public Class Penjualan
                     gbUbah.Visible = True
                     gbTambah.Visible = False
 
-
-
                     'Mengubah Harga
                     Dim Input As [String] = DataGridView_pesan.Rows( _
                     DataGridView_pesan.CurrentRow.Index).Cells("harga").Value
@@ -276,8 +256,6 @@ Public Class Penjualan
                 End If
             End If
         End If
-        isTambahFormTambah = False
-        MessageBox.Show(temp_ubah_jumlah)
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
@@ -302,13 +280,17 @@ Public Class Penjualan
         If dr_id.HasRows Then
             namaNe = dr_id("nama").ToString
         End If
+
         con.Close()
 
+        refreshPemesanan()
+        
         lbNama.Text = namaNe
         Timer1.Enabled = True
 
         lbHargaItem.Text = "0,00"
 
+        
     End Sub
 
     Private Sub tbEditCari_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tbEditCari.TextChanged
@@ -346,10 +328,8 @@ Public Class Penjualan
             no_pesan += 1
 
         End If
-        jumlahTotalHarga()
-        'segarkan()
-
-
+        'jumlahTotalHarga()
+        segarkan()
     End Sub
 
 
@@ -457,20 +437,7 @@ Public Class Penjualan
         DataGridView_pesan.Rows(DataGridView_pesan.CurrentRow.Index).Cells("total_harga_obat").Value = hslHarga * tbJumlahEd.Text
 
         hilangEditGr()
-        If tbJumlahEd.Text < temp_ubah_jumlah Then
-            isKurang = True
-            MessageBox.Show("kurang woy")
-            MessageBox.Show(isSegar.ToString)
-        Else
-            isKurang = False
-        End If
-
-        isTambahFormTambah = False
         segarkan()
-
-
-
-        
     End Sub
 
 
@@ -494,30 +461,44 @@ Public Class Penjualan
     End Sub
 
     Private Sub jumlahTotalHarga()
-        Dim subtotalharga, totalharga, harga_satuan As Integer
-        Dim subtotalbarang, totalbarang As Integer
+        'Dim harga_satuan, subtotalharga, subtotalbarang, totalbarang As Integer
 
-        For i As Integer = 0 To no_pesan - 1
-            harga_satuan = DataGridView_pesan.Rows(i).Cells(5).Value
+        totalharga = 0
+        Dim cek_isi_dg As Integer = DataGridView_pesan.RowCount.ToString
+        If cek_isi_dg >= 1 Then
+            For Each row As DataGridViewRow In DataGridView_pesan.Rows
+                totalharga += row.Cells.Item(7).Value
+            Next
+        End If
 
-            subtotalharga = harga_satuan * DataGridView_pesan.Rows(i).Cells(6).Value
-            totalharga = totalharga + subtotalharga
+        If totalharga = 0 Then
+            lbTotal.Text = "0,00"
+        Else
+            lbTotal.Text = totalharga.ToString("#,#.00")
+        End If
 
-            If i < no_pesan - 1 Then
-                DataGridView_pesan.Rows(i).Cells(7).Value = subtotalharga
-            End If
+
+        'For i As Integer = 0 To no_pesan - 1
+        '    harga_satuan = DataGridView_pesan.Rows(i).Cells(5).Value
+
+        '    subtotalharga = harga_satuan * DataGridView_pesan.Rows(i).Cells(6).Value
+        '    totalharga = totalharga + subtotalharga
+
+        '    If i < no_pesan - 1 Then
+        '        DataGridView_pesan.Rows(i).Cells(7).Value = subtotalharga
+        '    End If
 
 
-            subtotalbarang = DataGridView_pesan.Rows(i).Cells(6).Value
-            totalbarang = totalbarang + subtotalbarang
-            lbTotalBrg.Text = totalbarang
+        '    subtotalbarang = DataGridView_pesan.Rows(i).Cells(6).Value
+        '    totalbarang = totalbarang + subtotalbarang
+        '    lbTotalBrg.Text = totalbarang
 
-            If totalharga = 0 Then
-                lbTotal.Text = "0,00"
-            Else
-                lbTotal.Text = totalharga.ToString("#,#.00")
-            End If
-        Next
+        '    If totalharga = 0 Then
+        '        lbTotal.Text = "0,00"
+        '    Else
+        '        lbTotal.Text = totalharga.ToString("#,#.00")
+        '    End If
+        'Next
 
     End Sub
 
@@ -530,16 +511,14 @@ Public Class Penjualan
                 DataGridView_pesan.Rows(i).Cells(0).Value = i + 1
             End If
 
-
-
             i = i + 1
         End While
-        jumlahTotalHarga()
+        segarkan()
     End Sub
 
-    Private Sub DataGridView_pesan_CellEndEdit(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView_pesan.CellEndEdit
-        jumlahTotalHarga()
-    End Sub
+    'Private Sub DataGridView_pesan_CellEndEdit(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView_pesan.CellEndEdit
+    '    jumlahTotalHarga()
+    'End Sub
 
 
 
@@ -591,11 +570,6 @@ Public Class Penjualan
 
 
     End Sub
-
-
-    'Private Sub pnDafJual_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles pnDafJual.Paint
-    '    loadDaftarPenjualan()
-    'End Sub
 
     Private Sub DataGridView_daftar_CellClick(ByVal sender As System.Object, _
                                              ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) _
@@ -762,11 +736,14 @@ Public Class Penjualan
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
         If noFakturtb.Text = "" Then
             MessageBox.Show("No Faktur harus diisi.", "Kesalahan")
-        Else
-            MessageBox.Show("Data berhasil disimpan.", "Simpan")
+        ElseIf DataGridView_pesan.RowCount > 1 Then
             SimpanPenjualan()
+            MessageBox.Show("Data berhasil disimpan", "Simpan")
+        Else
+            MessageBox.Show("Data pemesanan kosong", "Kesalahan")
         End If
     End Sub
+
     'fungsi untuk insert ke penjualan dan pengambilan id pegawai current login
     Private Sub SimpanPenjualan()
         'Dim con1 As New MySqlConnection
@@ -794,11 +771,62 @@ Public Class Penjualan
         con.Close()
 
         con.Open()
-        Dim cmd As New MySqlCommand
-        cmd.CommandText = "INSERT INTO penjualan values ('" & noFakturtb.Text & "', '" & idne & "',(NOW()))"
-        cmd.Connection = con
+        Dim sql As String = "INSERT INTO penjualan values ('" & lbNoFaktur.Text & "', '" & idne & "',(NOW()), '" & totalharga & "')"
+        Dim cmd As New MySqlCommand(sql, con)
+
         cmd.ExecuteNonQuery()
         con.Close()
+
+        refreshPemesanan()
+        segarkan()
+    End Sub
+    
+    Private Sub btnCetak_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCetak.Click
+        If noFakturtb.Text = "" Then
+            MessageBox.Show("No Faktur harus diisi.", "Kesalahan")
+        ElseIf DataGridView_pesan.RowCount > 1 Then
+            SimpanPenjualan()
+            MessageBox.Show("Data berhasil disimpan", "Simpan")
+        Else
+            MessageBox.Show("Data pemesanan kosong", "Kesalahan")
+        End If
+    End Sub
+
+    Private Sub refreshPemesanan()
+        'nomorfaktur gabungan dari tanggal+nomor3digit
+        Dim con As New MySqlConnection
+        con.ConnectionString = "server=localhost;user=root;password=;database=apotekita;"
+        con.Open()
+        Dim waktu As String = Now.ToString()
+        Dim hari As String = waktu.Substring(0, 2)
+        Dim bulan As String = waktu.Substring(3, 2)
+        Dim tahun As String = waktu.Substring(8, 2)
+
+        Dim sql_nofak As String = "SELECT RIGHT(MAX(id_penjualan),3) as nomor_faktur FROM penjualan"
+        Dim cmd_nofak As New MySqlCommand(sql_nofak, con)
+        Dim dr_nofak As MySqlDataReader = cmd_nofak.ExecuteReader()
+
+        dr_nofak.Read()
+        Dim nomorfaktur As String = ""
+        If dr_nofak.HasRows Then
+            nomorfaktur = dr_nofak("nomor_faktur").ToString + 1
+        End If
+
+        lbNoFaktur.Text = tahun & bulan & hari & nomorfaktur
+
+        con.Close()
+
+        noFakturtb.Text = lbNoFaktur.Text
+
+
+        If DataGridView_pesan.RowCount > 1 Then
+            'hapussemua
+            For Each row As DataGridViewRow In DataGridView_pesan.Rows
+                DataGridView_pesan.Rows.Remove(row)
+            Next
+        End If
+
         
+
     End Sub
 End Class
