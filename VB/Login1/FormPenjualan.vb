@@ -44,7 +44,7 @@ Public Class Penjualan
         koneksi.Open()
 
         Dim adapter As New MySqlDataAdapter( _
-        "SELECT * FROM obat WHERE keterangan LIKE '%" & tbCari.Text & "%' OR nama_obat LIKE '%" & tbCari.Text & "%' OR no_barcode LIKE '%" & tbCari.Text & "%'", koneksi)
+        "SELECT a.id_obat as id_obat, a.nama_obat as nama_obat, a.harga as harga, a.expired_date as expired_date, a.no_bpom as no_bpom, a.no_barcode as no_barcode, a.keterangan as keterangan, b.jml_in as jumlah FROM obat a left join penerimaan b ON a.id_obat=b.id_obat WHERE keterangan LIKE '%" & tbCari.Text & "%' OR nama_obat LIKE '%" & tbCari.Text & "%' OR no_barcode LIKE '%" & tbCari.Text & "%'", koneksi)
 
         Dim tabel As New DataTable
         adapter.Fill(tabel)
@@ -75,7 +75,7 @@ Public Class Penjualan
         koneksi.Open()
 
         Dim adapter As New MySqlDataAdapter( _
-        "SELECT * FROM obat WHERE keterangan LIKE '%" & tbEditCari.Text & "%' OR nama_obat LIKE '%" & tbEditCari.Text & "%' OR no_barcode LIKE '%" _
+        "SELECT a.id_obat as id_obat, a.nama_obat as nama_obat, a.harga as harga, a.expired_date as expired_date, a.no_bpom as no_bpom, a.no_barcode as no_barcode, a.keterangan as keterangan, b.jml_in as jumlah FROM obat a left join penerimaan b ON a.id_obat=b.id_obat WHERE keterangan LIKE '%" & tbEditCari.Text & "%' OR nama_obat LIKE '%" & tbEditCari.Text & "%' OR no_barcode LIKE '%" _
         & tbEditCari.Text & "%'", koneksi)
 
         Dim tabel1 As New DataTable
@@ -753,8 +753,6 @@ Public Class Penjualan
         Dim con As New MySqlConnection
         con.ConnectionString = "server=localhost;user=root;password=;database=apotekita;"
         con.Open()
-
-
         Dim sql_id As String = "select id_pegawai,nama from pegawai where nama ='" & Login.username.Text _
         & "' and passwd =  '" & Login.pass.Text & "'"
         Dim cmd_id As New MySqlCommand(sql_id, con)
@@ -777,15 +775,18 @@ Public Class Penjualan
         cmd.ExecuteNonQuery()
         con.Close()
 
+        Dim cek As String
         'menambah ke detail penjualan
         For Each row As DataGridViewRow In DataGridView_pesan.Rows
-
+            'MessageBox.Show(lbNoFaktur.Text & row.Cells.Item(1).Value & row.Cells.Item(6).Value & row.Cells.Item(7).Value)
             con.Open()
-            Dim sql_detail As String = "INSERT INTO detail_penjualan(`id_penjualan`, `id_obat`, `jml_out`, `jumlah_harga_item`) values ('" & lbNoFaktur.Text & "', '" & row.Cells.Item(1).Value & "', '" & row.Cells.Item(6).Value & "', '" & row.Cells.Item(7).Value & "')"
+            Dim sql_detail As String = "INSERT INTO detail_penjualan (`id_penjualan`, `id_obat`, `jml_out`, `jumlah_harga_item`) values ('" & lbNoFaktur.Text & "', '" & row.Cells.Item(1).Value & "', '" & row.Cells.Item(6).Value & "', '" & row.Cells.Item(7).Value & "')"
             Dim cmd_detail As New MySqlCommand(sql_detail, con)
             cmd_detail.ExecuteNonQuery()
+    
             con.Close()
         Next
+
 
         refreshPemesanan()
         segarkan()
