@@ -775,16 +775,20 @@ Public Class Penjualan
         cmd.ExecuteNonQuery()
         con.Close()
 
-        Dim cek As String
         'menambah ke detail penjualan
         For Each row As DataGridViewRow In DataGridView_pesan.Rows
             'MessageBox.Show(lbNoFaktur.Text & row.Cells.Item(1).Value & row.Cells.Item(6).Value & row.Cells.Item(7).Value)
-            con.Open()
-            Dim sql_detail As String = "INSERT INTO detail_penjualan (`id_penjualan`, `id_obat`, `jml_out`, `jumlah_harga_item`) values ('" & lbNoFaktur.Text & "', '" & row.Cells.Item(1).Value & "', '" & row.Cells.Item(6).Value & "', '" & row.Cells.Item(7).Value & "')"
-            Dim cmd_detail As New MySqlCommand(sql_detail, con)
-            cmd_detail.ExecuteNonQuery()
-    
-            con.Close()
+
+            If row.Cells.Item(7).Value <> 0 Then
+                con.Open()
+                Dim sql_detail As String = "INSERT INTO detail_penjualan (`id_penjualan`, `id_obat`, `jml_out`, `jumlah_harga_item`) values ('" & lbNoFaktur.Text & _
+                "', '" & row.Cells.Item(1).Value & "', '" & row.Cells.Item(6).Value & "', '" & row.Cells.Item(7).Value & "')"
+                Dim cmd_detail As New MySqlCommand(sql_detail, con)
+                cmd_detail.ExecuteNonQuery()
+                con.Close()
+            End If
+
+            
         Next
 
 
