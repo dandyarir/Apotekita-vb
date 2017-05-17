@@ -1,0 +1,80 @@
+C:\Users\praktikan\Documents\VB\Login1\Login1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\praktikan\Documents\VB\Login1\Login1\obj\Debug\Login.Form1.resources
+C:\Users\praktikan\Documents\VB\Login1\Login1\obj\Debug\Login.menu_utama.resources
+C:\Users\praktikan\Documents\VB\Login1\Login1\obj\Debug\Login.Resources.resources
+C:\Users\praktikan\Documents\VB\Login1\Login1\obj\Debug\Login1.vbproj.GenerateResource.Cache
+C:\Users\praktikan\Documents\VB\Login1\Login1\bin\Debug\Login1.exe
+C:\Users\praktikan\Documents\VB\Login1\Login1\bin\Debug\Login1.pdb
+C:\Users\praktikan\Documents\VB\Login1\Login1\bin\Debug\Login1.xml
+C:\Users\praktikan\Documents\VB\Login1\Login1\obj\Debug\Login1.exe
+C:\Users\praktikan\Documents\VB\Login1\Login1\obj\Debug\Login1.xml
+C:\Users\praktikan\Documents\VB\Login1\Login1\obj\Debug\Login1.pdb
+C:\Users\praktikan\Documents\VBB\VB\Login1\Login1\obj\Debug\Login1.exe
+C:\Users\praktikan\Documents\VBB\VB\Login1\Login1\obj\Debug\Login1.xml
+C:\Users\praktikan\Documents\VBB\VB\Login1\Login1\obj\Debug\Login1.pdb
+C:\Users\praktikan\Documents\VBB\VB\Login1\Login1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\praktikan\Documents\VBB\VB\Login1\Login1\obj\Debug\Login.Form1.resources
+C:\Users\praktikan\Documents\VBB\VB\Login1\Login1\obj\Debug\Login.menu_utama.resources
+C:\Users\praktikan\Documents\VBB\VB\Login1\Login1\obj\Debug\Login.Resources.resources
+C:\Users\praktikan\Documents\VBB\VB\Login1\Login1\obj\Debug\Login1.vbproj.GenerateResource.Cache
+C:\Users\praktikan\Documents\VBB\VB\Login1\Login1\bin\Debug\Login1.exe
+C:\Users\praktikan\Documents\VBB\VB\Login1\Login1\bin\Debug\Login1.pdb
+C:\Users\praktikan\Documents\VBB\VB\Login1\Login1\bin\Debug\Login1.xml
+C:\Users\praktikan\Documents\PROYEK APOTEKER\VBB\VB\Login1\Login1\obj\Debug\Login1.exe
+C:\Users\praktikan\Documents\PROYEK APOTEKER\VBB\VB\Login1\Login1\obj\Debug\Login1.xml
+C:\Users\praktikan\Documents\PROYEK APOTEKER\VBB\VB\Login1\Login1\obj\Debug\Login1.pdb
+C:\Users\praktikan\Documents\PROYEK APOTEKER\VBB\VB\Login1\Login1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\praktikan\Documents\PROYEK APOTEKER\VBB\VB\Login1\Login1\obj\Debug\Login.menu_utama.resources
+C:\Users\praktikan\Documents\PROYEK APOTEKER\VBB\VB\Login1\Login1\obj\Debug\Login.Resources.resources
+C:\Users\praktikan\Documents\PROYEK APOTEKER\VBB\VB\Login1\Login1\obj\Debug\Login1.vbproj.GenerateResource.Cache
+C:\Users\praktikan\Documents\PROYEK APOTEKER\VBB\VB\Login1\Login1\bin\Debug\Login1.exe
+C:\Users\praktikan\Documents\PROYEK APOTEKER\VBB\VB\Login1\Login1\bin\Debug\Login1.pdb
+C:\Users\praktikan\Documents\PROYEK APOTEKER\VBB\VB\Login1\Login1\bin\Debug\Login1.xml
+C:\Users\praktikan\Documents\PROYEK APOTEKER\VBB\VB\Login1\Login1\obj\Debug\Login.dialoghps.resources
+C:\Users\praktikan\Documents\PROYEK APOTEKER\VBB\VB\Login1\Login1\obj\Debug\Login.Login.resources
+C:\Users\praktikan\Documents\PROYEK APOTEKER\VBB\VB\Login1\Login1\obj\Debug\Login.MainHRD.resources
+C:\Users\praktikan\Documents\PROYEK APOTEKER\VBB\VB\Login1\Login1\obj\Debug\Login.Tambah.resources
+C:\Users\praktikan\Documents\PROYEK APOTEKER\VBB\VB\Login1\Login1\obj\Debug\Login.Ubah.resources
+C:\Users\praktikan\Documents\PROYEK APOTEKER\VBB\VB\Login1\Login1\obj\Debug\Login.Form1.resources
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\Login1.exe
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\Login1.xml
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\Login1.pdb
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\bin\Debug\Login1.exe
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\bin\Debug\Login1.pdb
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\bin\Debug\Login1.xml
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\Login.dialoghps.resources
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\Login.form1.resources
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\Login.Login.resources
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\Login.MainHRD.resources
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\Login.menu_utama.resources
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\Login.Resources.resources
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\Login.Tambah.resources
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\Login.Ubah.resources
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\Login1.vbproj.GenerateResource.Cache
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\bin\Debug\POS.exe
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\bin\Debug\POS.pdb
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\bin\Debug\POS.xml
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\Login.dialogspn.resources
+C:\Users\Dendi\Documents\PROYEK APOTEKER\VBB\VB\apoteker fix\Login1\Login1\obj\Debug\Login.Penjualan.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.dialoghps.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.dialogspn.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.form1.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.Penjualan.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.Login.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.MainHRD.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.menu_utama.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.Resources.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.Tambah.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login.Ubah.resources
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Login1.vbproj.GenerateResource.Cache
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\bin\Debug\Apotekita.exe
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\bin\Debug\Apotekita.pdb
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\bin\Debug\Apotekita.xml
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Apotekita.exe
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Apotekita.xml
+D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Apotekita.pdb
+D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Apotekita.exe
+D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Apotekita.xml
+D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Apotekita.pdb
