@@ -62,7 +62,7 @@ Public Class form1
 
     Private Sub Buttontbh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
         If (TextBox1.Text = "") Then
-            MessageBox.Show("ID OBAT harus diisi.")
+            MessageBox.Show("ID OBAT harus diisi")
         Else
             Dim result As Integer = MessageBox.Show("Apakah Anda yakin?", "Tambah Data", MessageBoxButtons.YesNo)
             If result = DialogResult.Yes Then
