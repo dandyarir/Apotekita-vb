@@ -42,6 +42,7 @@ Public Class form1
         Panel2.Visible = False
         Panel4.Visible = False
         Panel3.Visible = True
+        tampilCari()
 
     End Sub
 
@@ -56,6 +57,7 @@ Public Class form1
         Panel2.Visible = False
         Panel3.Visible = False
         Panel4.Visible = True
+        tampilCari()
     End Sub
 
     Private Sub Buttontbh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
@@ -203,6 +205,8 @@ Public Class form1
     Private Sub TextBoxCari_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox14.TextChanged
         If TextBox14.Text.Length >= 3 Then
             tampilCari()
+        ElseIf TextBox14.Text.Length = 0 Then
+            tampilCari()
         End If
     End Sub
 
@@ -239,4 +243,7 @@ Public Class form1
         Me.Close()
     End Sub
 
+    Private Sub ref_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ref_btn.Click
+        form_idObatRef.Visible = True
+    End Sub
 End Class

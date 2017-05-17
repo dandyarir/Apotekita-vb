@@ -82,6 +82,7 @@ Partial Class form1
         Me.Button5 = New System.Windows.Forms.Button
         Me.Label1 = New System.Windows.Forms.Label
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
+        Me.ref_btn = New System.Windows.Forms.Button
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -320,7 +321,7 @@ Partial Class form1
         Me.Panel3.Controls.Add(Me.GroupBox1)
         Me.Panel3.Controls.Add(Me.DataGridView1)
         Me.Panel3.Controls.Add(Me.Label16)
-        Me.Panel3.Location = New System.Drawing.Point(121, 65)
+        Me.Panel3.Location = New System.Drawing.Point(123, 63)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(528, 402)
         Me.Panel3.TabIndex = 29
@@ -390,6 +391,7 @@ Partial Class form1
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.ref_btn)
         Me.Panel2.Controls.Add(Me.Button6)
         Me.Panel2.Controls.Add(Me.TextBox6)
         Me.Panel2.Controls.Add(Me.Label15)
@@ -631,13 +633,22 @@ Partial Class form1
         Me.PictureBox1.TabIndex = 30
         Me.PictureBox1.TabStop = False
         '
+        'ref_btn
+        '
+        Me.ref_btn.Location = New System.Drawing.Point(354, 37)
+        Me.ref_btn.Name = "ref_btn"
+        Me.ref_btn.Size = New System.Drawing.Size(75, 23)
+        Me.ref_btn.TabIndex = 30
+        Me.ref_btn.Text = "Referensi ID"
+        Me.ref_btn.UseVisualStyleBackColor = True
+        '
         'form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(673, 494)
-        Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
@@ -721,4 +732,5 @@ Partial Class form1
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents ref_btn As System.Windows.Forms.Button
 End Class
