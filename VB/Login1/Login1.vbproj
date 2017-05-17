@@ -85,16 +85,22 @@
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="Form3.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPenjualan.Designer.vb">
       <DependentUpon>FormPenjualan.vb</DependentUpon>
     </Compile>
     <Compile Include="FormPenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListIDPegawai.Designer.vb">
+      <DependentUpon>ListIDPegawai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListIDPegawai.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.vb">
@@ -154,11 +160,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPenjualan.resx">
       <DependentUpon>FormPenjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListIDPegawai.resx">
+      <DependentUpon>ListIDPegawai.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -309,6 +318,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ic_undo_black_48dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

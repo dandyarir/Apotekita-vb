@@ -75,6 +75,25 @@ D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\bi
 D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Apotekita.exe
 D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Apotekita.xml
 D:\Documents\1. Collage\SEMESTER 4\KL Visual\POS_dandi\Apotekita-vb\VB\Login1\obj\Debug\Apotekita.pdb
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\obj\Debug\Apotekita.exe
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\obj\Debug\Apotekita.xml
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\obj\Debug\Apotekita.pdb
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\bin\Debug\Apotekita.exe
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\bin\Debug\Apotekita.pdb
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\bin\Debug\Apotekita.xml
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\obj\Debug\ResolveAssemblyReference.cache
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\obj\Debug\Login.dialoghps.resources
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\obj\Debug\Login.dialogspn.resources
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\obj\Debug\Login.form1.resources
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\obj\Debug\Login.Penjualan.resources
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\obj\Debug\Login.ListIDPegawai.resources
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\obj\Debug\Login.Login.resources
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\obj\Debug\Login.MainHRD.resources
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\obj\Debug\Login.menu_utama.resources
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\obj\Debug\Login.Resources.resources
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\obj\Debug\Login.Tambah.resources
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\obj\Debug\Login.Ubah.resources
+E:\All About College\SEMESTER 4\VISUAL\Apotekita_Final\VB\Login1\obj\Debug\Login1.vbproj.GenerateResource.Cache
 D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Apotekita.exe
 D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Apotekita.xml
 D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Apotekita.pdb
@@ -85,7 +104,9 @@ D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\ResolveAssemblyReference.c
 D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Login.dialoghps.resources
 D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Login.dialogspn.resources
 D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Login.form1.resources
+D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Login.form_refIdObat.resources
 D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Login.Penjualan.resources
+D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Login.ListIDPegawai.resources
 D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Login.Login.resources
 D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Login.MainHRD.resources
 D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Login.menu_utama.resources
@@ -93,4 +114,3 @@ D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Login.Resources.resources
 D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Login.Tambah.resources
 D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Login.Ubah.resources
 D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Login1.vbproj.GenerateResource.Cache
-D:\Playground\Apotekita-vb-master\VB\Login1\obj\Debug\Login.form_idObatRef.resources

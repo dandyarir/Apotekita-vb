@@ -57,12 +57,11 @@ Public Class form1
         Panel2.Visible = False
         Panel3.Visible = False
         Panel4.Visible = True
-        tampilCari()
     End Sub
 
     Private Sub Buttontbh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
         If (TextBox1.Text = "") Then
-            MessageBox.Show("ID OBAT harus diisi")
+            MessageBox.Show("ID OBAT harus diisi.")
         Else
             Dim result As Integer = MessageBox.Show("Apakah Anda yakin?", "Tambah Data", MessageBoxButtons.YesNo)
             If result = DialogResult.Yes Then
@@ -243,7 +242,7 @@ Public Class form1
         Me.Close()
     End Sub
 
-    Private Sub ref_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ref_btn.Click
-        form_idObatRef.Visible = True
+    Private Sub refObatID_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles refObatID_btn.Click
+        form_refIdObat.Visible = True
     End Sub
 End Class

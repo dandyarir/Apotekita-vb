@@ -53,4 +53,8 @@ Public Class Tambah
     Private Sub Label16_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label16.Click
 
     End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CekID.Click
+        ListIDPegawai.Visible = True
+    End Sub
 End Class

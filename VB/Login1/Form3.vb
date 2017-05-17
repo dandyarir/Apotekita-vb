@@ -1,7 +1,9 @@
 ﻿Imports MySql.Data.MySqlClient
-Public Class form_idObatRef
+Public Class form_refIdObat
 
-    Private Sub idObatRef_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub form_refIdObat_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+
         Dim koneksi As New MySqlConnection
         koneksi.ConnectionString = "server=localhost;user=root;password=;database=apotekita;"
         koneksi.Open()
@@ -15,7 +17,7 @@ Public Class form_idObatRef
         Dim adapter As New MySqlDataAdapter(cmd)
         Dim tabel As New DataTable
         adapter.Fill(tabel)
-        DataGridView1.DataSource = tabel
+        dg_ref.DataSource = tabel
         koneksi.Close()
     End Sub
 End Class

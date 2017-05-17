@@ -15,6 +15,7 @@ Public Class MainHRD
         Dim tabel As New DataTable
         adapter.Fill(tabel)
         DataGridViewPeg.DataSource = tabel
+        DataGridViewPeg.ReadOnly = True
 
         koneksi.Close()
     End Sub
