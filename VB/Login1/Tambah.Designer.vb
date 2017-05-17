@@ -47,6 +47,7 @@ Partial Class Tambah
         Me.Label1 = New System.Windows.Forms.Label
         Me.id_pegawai_tb = New System.Windows.Forms.TextBox
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
+        Me.CekID = New System.Windows.Forms.Button
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -297,11 +298,21 @@ Partial Class Tambah
         Me.PictureBox1.TabIndex = 56
         Me.PictureBox1.TabStop = False
         '
+        'CekID
+        '
+        Me.CekID.Location = New System.Drawing.Point(231, 41)
+        Me.CekID.Name = "CekID"
+        Me.CekID.Size = New System.Drawing.Size(101, 35)
+        Me.CekID.TabIndex = 57
+        Me.CekID.Text = "Cek List ID Pegawai"
+        Me.CekID.UseVisualStyleBackColor = True
+        '
         'Tambah
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(537, 414)
+        Me.Controls.Add(Me.CekID)
         Me.Controls.Add(Me.DateTimePickerTL)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Label17)
@@ -359,4 +370,5 @@ Partial Class Tambah
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents id_pegawai_tb As System.Windows.Forms.TextBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents CekID As System.Windows.Forms.Button
 End Class
